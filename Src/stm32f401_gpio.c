@@ -48,3 +48,4 @@ void GPIO_TogglePin(GPIO_RegDef_t *pGPIOx, int pinNumber){
 int GPIO_ReadInputPin(GPIO_RegDef_t *pGPIOx, int pinNumber){
 	return ((pGPIOx->IDR >> pinNumber) & 0x1);
 }
+

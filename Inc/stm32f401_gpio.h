@@ -16,5 +16,7 @@ void GPIO_Init(GPIO_RegDef_t *pGPIOx, int pinNumber, int mode, int speed, int ou
 void GPIO_WriteOutputPin(GPIO_RegDef_t *pGPIOx, int pinNumber, int value);
 void GPIO_TogglePin(GPIO_RegDef_t *pGPIOx, int pinNumber);
 int GPIO_ReadInputPin(GPIO_RegDef_t *pGPIOx, int pinNumber);
-
+void ADC_Init(void);
+void ADC_EnableClock(void);
+float ADC_Read(void);
 #endif /* STM32F401_GPIO_H_ */
